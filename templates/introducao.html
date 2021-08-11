@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block content %}
+
+<div class="scrollmenu">
+  <a href="#">Home</a>
+  <a href="#menu">Login</a>
+  <a href="#pedidos">Pedidos</a>
+  <a href="#sobre">Sobre</a>
+</div>  
+      
+<div class="image">
+  <div class="img-text">
+    <h1 class="txtum">The Blu - Guer</h1>
+    <h2 class="txtdois">House</h2>
+  </div>
+</div>
+
+
+<h1 class="menu">Menu</h1>
+<div id="slider">
+  <figure>
+    <img src="{{ url_for('static', filename='img/five.jpg') }}" >
+    <img src="{{ url_for('static', filename='img/two.jpg') }}" >  
+    <img src="{{ url_for('static', filename='img/three.jpg') }}">
+    <img src="{{ url_for('static', filename='img/four.jpg') }}">
+    <img src="{{ url_for('static', filename='img/six.jpg') }}">
+  </figure>
+</div>
+
+{% endblock %}
